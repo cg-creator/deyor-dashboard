@@ -3,7 +3,7 @@ services:
     name: deyor-sales-dashboard
     env: node
     rootDir: server
-    plan: free
+    plan: starter
     buildCommand: |
       npm ci
       cd ..
@@ -23,6 +23,3 @@ services:
       - key: DATABASE_SSL
         value: "true"
 
-databases:
-  - name: deyor-salesdb
-    plan: standard
